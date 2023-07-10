@@ -1,13 +1,57 @@
+:root {
+  /* Background Colors */
+	--bg-light: #f3f3f3;
+	--bg-dark: #1b1b1b;
+
+  /* Brand Colors */
+	--br-1: #44355b;
+	--br-2: #31263e;
+	--br-3: #221e22;
+  --br-4: #ECA72C;
+  --br-5: #EE5622;
+
+  /* Layout Colors */
+  --lo-primary: var(--br-1, #44355B);
+  
+  --lo-light-hc-1: var(--bg-dark, #1B1B1B); 
+  --lo-light-hc-2: #323232;
+  --lo-light-lc-1: #DEDEDE;
+  
+  --lo-dark-hc-1: var(--bg-light, #F3F3F3);
+  --lo-dark-hc-2: #DEDEDE;
+  --lo-dark-lc-1: #323232;
+
+  /* Denotive Colors */
+  --d-error: #DE0101;
+  --d-sucess: #339311; 
+  --d-light-disabled: #ABABAB;
+  --d-dark-disabled: #666666;
+
+  /* Interactive Colors */
+  --i-primary: #0B67D4;
+  --i-primary-light: #2785F3;
+  --i-primary-lighter: #569FF6; 
+  --i-primary-dark: #0952AA;
+  --i-primary-darker: #063B79;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-light);
+  color: var(--lo-light-hc-1); 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--lo-dark-hc-1);
+  }
+} */
