@@ -87,14 +87,14 @@ body {
 	background-color: var(--b-c4);
 	color: white;
 }
-.txt.brand-color-4{
+.txt.brand-color-4 {
 	color: var(--b-c4);
 	background-color: transparent;
 }
 
 .brand-color-5 {
 	background-color: var(--b-c5);
-	color: white
+	color: white;
 }
 .txt.brand-color-5 {
 	color: var(--b-c5);
@@ -109,7 +109,7 @@ body {
 
 .bg-dark {
 	background-color: var(--bg-dark);
-	color: var(--d-hc1)
+	color: var(--d-hc1);
 }
 
 /* Primary colors */
@@ -157,6 +157,7 @@ body {
 
 .l-lc1 {
 	background-color: var(--l-lc1);
+	color: var(--l-hc2);
 }
 .txt.l-lc1 {
 	color: var(--l-lc1);
@@ -166,6 +167,7 @@ body {
 /* Dark mode colors */
 .d-hc1 {
 	background-color: var(--d-hc1);
+	color: var(--bg-dark);
 }
 .txt.d-hc1 {
 	color: var(--d-hc1);
@@ -174,6 +176,7 @@ body {
 
 .d-hc2 {
 	background-color: var(--d-hc2);
+	color: var(--bg-dark);
 }
 .txt.d-hc2 {
 	color: var(--d-hc2);
@@ -200,7 +203,7 @@ body {
 
 .den-success {
 	background-color: var(--den-success);
-	color: white
+	color: white;
 }
 .txt.den-success {
 	color: var(--den-success);
@@ -209,18 +212,18 @@ body {
 
 .den-disabled-light {
 	background-color: var(--den-disabled-light);
-	color: grey
+	color: grey;
 }
-.txt.disabled-light{
+.txt.disabled-light {
 	color: var(--den-disabled-light);
 	background-color: transparent;
 }
 
 .den-disabled-dark {
 	background-color: var(--den-disabled-dark);
-	color: grey
+	color: grey;
 }
-.txt.den-disabled-dark{
+.txt.den-disabled-dark {
 	color: var(--den-disabled-dark);
 	background-color: transparent;
 }

@@ -1,0 +1,23 @@
+.color-card {
+    width: 10rem; 
+    height: 2rem;
+    text-transform: capitalize;
+    --radius: 5px; 
+}
+
+.color-card:first-child {
+    border-radius:var(--radius) var(--radius) 0 0;
+}
+.color-card:last-child {
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.color-card:only-child {
+    border-radius: var(--radius);
+}
+
+.color-pallete {
+    background-color: rgba(0.5,0.5,0.5, .2);
+    padding: 3rem;
+    border-radius: 20px;
+}
