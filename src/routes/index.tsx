@@ -1,9 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Sandbox } from "../views";
+import { Sandbox, Homepage } from "../views";
 
-const router = createBrowserRouter([{
-    path: "/sandbox",
-    element: <Sandbox />
-}])
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Homepage />,
+	},
+	{
+		path: "/sandbox",
+		element: <Sandbox />,
+	},
+]);
 
 export default router;

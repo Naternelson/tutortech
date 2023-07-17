@@ -1,0 +1,50 @@
+{
+    "comments": [
+        "Brand colors are not subject to change as they are part of the brand identity.",
+        "The layout colors are the primary design colors and should be used for most design elements.",
+        "The layout colors are split between dark mode and light mode. When in light mode, the colors should correspond to the light version and visa versa",
+        "The denotive colors do not change between light and dark mode, save for the disabled colors.",
+        "The interactive colors are the colors used for interactive elements such as buttons, links, and other elements that are interacted with by the user.",
+        "The interactive have a lighter and dark version for showing different states of a button and are not changed by the light and dark mode."
+    ],
+	"brand": ["#44355b", "#31263e", "#221e22", "#eca72c", "#ee5622"],
+	"layout": {
+		"background": {
+			"light": "#f3f3f3",
+			"dark": "#1b1b1b"
+		},
+		"primary": {
+            "main": "#44355b",
+            "high-contrast": "tbd",
+            "low-contrast": "tbd"
+        },
+
+		"light": {
+			"high-contrast": ["#1b1b1b", "#323232"],
+			"low-contrast": ["#dedede"]
+		},
+		"dark": {
+			"high-contrast": ["#f3f3f3", "#dedede"],
+			"low-contrast": ["#323232"]
+		}
+	},
+	"denotive": {
+		"error": "#de0101",
+		"success": "#339311",
+		"disabled": {
+			"light": "#ababab",
+			"dark": "#666666"
+		}
+	},
+	"interactive": {
+		"primary": {
+			"main": "#0b67d4",
+			"light": "#2785f3",
+			"lighter": "#569ff6",
+			"dark": "#0952aa",
+			"darker": "#063b79",
+            "high-contrast": "tbd",
+            "low-contrast": "tbd"
+		}
+	}
+}
