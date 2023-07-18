@@ -5,7 +5,7 @@ export const SandboxColorsSection = () => {
     return (
 		<section>
 			<h2>Colors Section</h2>
-			<Box className={["grid-container", "grid-cols-4", "gap-1", "color-pallete"]}>
+			<Box className={["grid-container", "grid-cols-4", "gap-1", "sandbox-section"]}>
 				<BrandColors />
 				{/* <TextBrandColors/> */}
 				<DenotiveColors />

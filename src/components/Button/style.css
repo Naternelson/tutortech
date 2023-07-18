@@ -1,0 +1,102 @@
+button {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	outline: transparent;
+	cursor: pointer;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.btn-standard[disabled] {
+	cursor: auto;
+	background-color: var(--den-disabled-light) !important;
+	color: var(--l-lc1) !important;
+}
+.btn-standard[disabled]:hover {
+	background-color: var(--den-disabled-light) !important;
+	color: var(--l-lc1) !important;
+}
+.btn-standard[disabled]:active {
+	background-color: var(--den-disabled-light) !important;
+	color: var(--l-lc1) !important;
+}
+
+.btn-primary.btn-standard {
+	background-color: var(--i-p-main);
+	transition: all 0.15s ease-in-out;
+	color: var(--i-p-hc);
+	text-transform: uppercase;
+}
+.btn-primary.btn-standard:hover {
+	background-color: var(--i-p-light);
+}
+.btn-primary.btn-standard:active {
+	background-color: var(--i-p-lighter);
+}
+
+.btn-primary.btn-outlined {
+	border: 2px solid var(--i-p-dark);
+	transition: all 0.15s ease-in-out;
+	color: inherit;
+	text-transform: uppercase;
+}
+.btn-primary.btn-outlined:hover {
+	border: 2px solid var(--i-p-light);
+}
+.btn-primary.btn-outlined:active {
+	background-color: var(--i-p-lighter);
+	border: 2px solid var(--i-p-lighter);
+}
+.btn-primary.btn-text {
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	color: inherit;
+	text-transform: uppercase;
+}
+.btn-primary.btn-text:hover {
+	color: var(--i-p-light);
+}
+.btn-primary.btn-text:active {
+	color: var(--i-p-lighter);
+}
+
+.btn-small {
+	padding: 0.25rem 1rem;
+	font-size: 0.75rem;
+	border-radius: 5px;
+	max-width: fit-content;
+}
+
+.btn-medium {
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	max-width: fit-content;
+}
+.btn-large {
+	padding: 0.75rem 1rem;
+	font-size: 1.1rem;
+	border-radius: 5px;
+	max-width: fit-content;
+}
+
+.btn-full-width {
+	width: 100% !important;
+	max-width: initial;
+}
+@media (prefers-color-scheme: dark) {
+	.btn-standard[disabled] {
+		cursor: auto;
+		background-color: var(--den-disabled-dark) !important;
+		color: var(--d-lc1) !important;
+	}
+	.btn-standard[disabled]:hover {
+		background-color: var(--den-disabled-dark) !important;
+		color: var(--d-lc1) !important;
+	}
+	.btn-standard[disabled]:active {
+		background-color: var(--den-disabled-dark) !important;
+		color: var(--d-lc1) !important;
+	}
+}
