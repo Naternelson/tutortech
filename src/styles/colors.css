@@ -27,7 +27,7 @@
 	--d-lc1: #323232;
 
 	/* Denotive colors */
-	--den-error: #de0101;
+	--den-error: #CA1C1C;
 	--den-success: #339311;
 	--den-disabled-light: #ababab;
 	--den-disabled-dark: #666666;
@@ -47,9 +47,6 @@ body {
 	background-color: var(--bg-light);
 	color: var(--l-hc1);
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-		"Droid Sans", "Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--bg-light);
 }

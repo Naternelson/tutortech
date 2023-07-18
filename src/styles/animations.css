@@ -11,5 +11,67 @@
 
 .fade-up{
     position: relative;
-    animation: fade-up 1s var(--ease-in-out-expo);
+    animation: fade-up 500ms var(--ease-out-expo);
+}
+
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-down{
+    position: relative;
+    animation: fade-down 500ms var(--ease-out-expo);
+}
+
+@keyframes fade-left {
+        0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-left{
+    position: relative;
+    animation: fade-left 500ms var(--ease-out-expo);
+}
+
+@keyframes fade-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+.fade-right{
+    position: relative;
+    animation: fade-right 500ms var(--ease-out-expo);
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fade {
+    position: relative;
+    animation: fade-in 500ms var(--ease-out-expo);
 }

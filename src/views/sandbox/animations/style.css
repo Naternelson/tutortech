@@ -1,0 +1,8 @@
+.card {
+    cursor: pointer;
+    width: 100px; 
+    height: 100px;
+    border-radius: 5px; 
+    text-align: center;
+    user-select: none;
+}
