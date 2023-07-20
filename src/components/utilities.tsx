@@ -41,4 +41,3 @@ export const resolveSVGProps = <T extends SVGSVGElement>(props: SVGBaseProps<T>)
 		className: resolveCN(props.className || [])
 	};
 }
-console.log("Yo")
