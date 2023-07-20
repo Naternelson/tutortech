@@ -15,6 +15,9 @@ export type BaseProps<T extends HTMLElement> = Omit<DetailedHTMLProps<HTMLAttrib
 	// "data-transition-state"?: "entering" | "entered" | "exiting" | "exited";
 };
 
+export type SVGBaseProps<T extends SVGSVGElement> = Omit<DetailedHTMLProps<HTMLAttributes<T>, T>, "className"> & {
+	className?: ClassName;
+};
 
 export const resolveCN = (...args: ClassName[]): string => {
 	return args.filter(Boolean).flat(Infinity).join(" ");
@@ -28,4 +31,13 @@ export const resolveProps = <T extends HTMLElement>(props: BaseProps<T>): Omit<B
         ...props,
         className: resolveCN(props.className || [])
     }
+}
+
+export const resolveSVGProps = <T extends SVGSVGElement>(props: SVGBaseProps<T>): Omit<SVGBaseProps<T>, "className"> & {
+	className: string
+} => {
+	return {
+		...props,
+		className: resolveCN(props.className || [])
+	};
 }

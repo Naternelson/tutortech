@@ -1,0 +1,26 @@
+.backdrop {
+    pointer-events: none; 
+    transition: color 0.5s var(--ease-out-expo), backdrop-filter 0.5s var(--ease-out-expo), background-color 0.5s var(--ease-out-expo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    backdrop-filter: blur(0) ;
+    -webkit-backdrop-filter: blur(15px);
+    /* z-index: -1; */
+}
+.backdrop[data-shown=true]{
+    pointer-events: all;
+    z-index: 1500;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px) ;
+    -webkit-backdrop-filter: blur(3px);
+}
+/* 
+@media (prefers-color-scheme=dark){
+    .backdrop {
+        background-color: var(--bg-dark);
+    }
+} */
