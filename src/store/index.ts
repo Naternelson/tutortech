@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./slices";
+import { useSelector } from "react-redux";
 
 // Optional: Add any custom middleware you want to use
 
